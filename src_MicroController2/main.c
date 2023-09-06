@@ -19,8 +19,8 @@ int main(int argc, char *argv[]) {
     MGPIO_vSetPinInputPull(GPIO_PORTA, PIN0, GPIO_PULLDOWN);
 
     /* Set Pin 1 PORTA as Input Button that idicates that the door is open*/
-    MGPIO_vSetPinMode(GPIO_PORTA, PIN0, GPIO_MODE_INPUT);
-    MGPIO_vSetPinInputPull(GPIO_PORTA, PIN0, GPIO_PULLDOWN);
+    MGPIO_vSetPinMode(GPIO_PORTA, PIN1, GPIO_MODE_INPUT);
+    MGPIO_vSetPinInputPull(GPIO_PORTA, PIN1, GPIO_PULLDOWN);
 
     /* Set Pins 9 and 10 PORTA as Alternate Function FOR USART */
     MGPIO_vSetPinMode(GPIO_PORTA, PIN9, GPIO_MODE_ALT);
@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
     MUSART_vEnable();
     MotorStatus status =Motor_GetStatus();
     while (1) {
-            if (status==MOTOR_STATUS_RUNNING && MGPIO_u8GetPinValue(GPIO_PORTA,PIN0))
+            if (status==MOTOR_STATUS_RUNNING && MGPIO_u8GetPinValue(GPIO_PORTA,PIN1))
         {
                 // Button is pressed and Motor is ON, send a character to the other microcontroller
                 MUSART_vSendData("B", 1);
