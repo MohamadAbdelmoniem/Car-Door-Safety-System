@@ -57,6 +57,5 @@ To replicate this project, you will need the following components:
 
 *Created on: August 15, 2023*
 
-For detailed implementation and usage instructions, please refer to the code in the respective microcontroller directories. If you have any questions or encounter issues, please open an [issue](https://github.com/your-username/project-name/issues) on GitHub.
 
 ---
