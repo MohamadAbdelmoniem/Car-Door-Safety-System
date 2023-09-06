@@ -1,4 +1,3 @@
-# Car_Alert_System
 # Project Name: Car Door Safety System with Buzzer Alert
 
 ## Description
