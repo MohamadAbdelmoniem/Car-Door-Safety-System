@@ -1,4 +1,4 @@
-# Project Name: Car Door Safety System with Buzzer Alert
+# Car Door Safety System with Buzzer Alert
 
 ## Description
 This project demonstrates communication between two microcontrollers using USART (Universal Synchronous Asynchronous Receiver Transmitter) and includes control of a buzzer based on the received data. One microcontroller is responsible for controlling a DC motor based on button input, while the other microcontroller receives the motor status and controls a buzzer accordingly.
